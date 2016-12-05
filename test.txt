@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <head>
+        <title> Game Monster </title>
+        <link rel = "stylesheet" href = "GameMonster.css">
+    </head>
+
+    <body onLoad = "FormLoad()">
+        <div class = "bound_top"> 
+   
+            <!-- Top left -->
+            <div class = "bound_top_left">
+                <div class = "text_top_left">
+                   <a> Score: </a> 
+                   <a id = "count_score"> </a>
+                </div>
+
+                <div class = "text_top_left">
+                   <div id = "count_heart">
+                       <a> Heart: </a>
+                   </div>
+                   <div>
+                   </div>
+                </div>
+
+                <div class = "text_top_left">
+                   <a> Speed: </a>
+                   <a id = "count_speed"> </a>
+                </div>
+            </div>
+            <!-- End top left -->
+
+            <!-- Top right -->  
+            <div class = "bound_top_left">
+                <div class = "score">
+                   <a> Random Monster: </a> 
+                   <a id = "count_monster"> </a>
+                </div>
+
+                <div class = "button_to_click">
+                    <button type = "button" id = "boom" class = "btn_boom"> </button>
+                    <button type = "button" id = "stop" class = "btn_stop" onClick = "Stop()"> </button>
+                    <button type = "button" id = "play_pause" class = "btn_play" onClick = "Play()"> </button>
+                    <button type = "button" id = "replay" class = "btn_replay"> </button>
+                </div>
+            </div>
+            <!-- End top right -->
+        </div> 
+
+        <div class = "bound_bot" id = "bound_bot">
+             <canvas id = 'canvasImage' width = '500' height = '440' onClick = 'Score()'> </canvas>
+        </div>
+        <script language = "javaScript" src = "GameMonster.js"> </script>
+    </body>
+</html>
